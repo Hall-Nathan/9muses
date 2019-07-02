@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./libs/jquery-3.4.1.js"></script>
+    <script src="./libs/jquery.csv.js"></script>
+    <script src="./scripts/script.js"></script>
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>9muses</title>
+</head>
+
+<body>
+    <!------------------------------ Header Section --------------------------------->
+    <div class="header">
+        <a href="home.html"><img id="header_img" src="./Images/9muses_logo.svg" alt="9muses logo" href="home.html" /></a>
+        <div id="btnContainer">
+            <button class="nav-btn" id="about_btn"><a href="#" class="nav-link">About</a></button>
+            <button class="nav-btn" id="artists_btn"><a href="#" class="nav-link">Artists</a></button>
+            <button class="nav-btn" id="find_btn"><a href="#" class="nav-link">Find us</a></button>
+        </div>
+    </div>
+    <!------------------------------ About Section --------------------------------->
+    <div id="about_section">
+        <div class="about-box">
+            <p id="welcome-msg">The starting point for my idea was music. Music is a great interest of mine and sparks
+                my
+                creativity.
+                Just as music has inspired me, I wanted to create a site that could give creative inspiration to others.
+                The current working name is “9muses”, taken from the Goddesses of the Arts in Greek mythology.
+                Muses or Mousai in Greek mythology are beautiful deities who inspired various arts and sciences. They
+                were
+                the inspiration for knowledge. It is believed that these muses were invoked by artists to seek blessings
+                in
+                their endeavours. The Nine Muses gave artists, philosophers and individuals the necessary inspiration
+                for
+                creation.
+                Still today, the Muses are symbols of inspiration and artistic creation.
+            </p>
+        </div>
+    </div>
+    <!------------------------------ Artist Grid Section --------------------------------->
+    <div id="artist_section">
+        <div class="artist-grid"></div>
+    </div>
+    <!------------------------------ Contact Section --------------------------------->
+    <div id="contact_container">
+        <div id="map_container">
+            <h1>Find us here</h1>
+            <!---- Embedded Map ---->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9351.742846786461!2d-7.140860352612556!3d54.128066756105305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485e1c1b0638b7fb%3A0xf2db01125f53d5f3!2sDoohat%2C+Co.+Monaghan!5e0!3m2!1sen!2sie!4v1561377651476!5m2!1sen!2sie"
+                width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+        </div>
+        <br>
+        <div id="contact_details">
+            <h2>Get in touch</h2>
+            <p>email: 9muses@fake.email</p>
+            <p>number: 087 12356789</p>
+        </div>
+        <div id="suggestions">
+            <h3>What artists inpire you?</h3>
+            <form action="">
+                <input type="text" name="suggestions" id="suggestion_box">
+                <input type="submit" value="Send" id="send_btn">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

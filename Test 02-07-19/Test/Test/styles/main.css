@@ -1,0 +1,148 @@
+/*------------------------------ General ------------------------------*/
+body{
+    /*background-color: rgba(99, 99, 99, 0.671);*/
+    font-family: Arial, sans-serif, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--------------------------- Header / Nav ----------------------------*/
+
+.header {
+    height: auto;
+    width: 100vw;
+    background-color: rgb(236, 216, 216);
+    border: 1px solid black;
+    position: fixed;
+    z-index: 1;
+}
+
+#header_img{
+    margin-left: 3%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.nav-btn{
+    background-color: rgba(99, 99, 99, 0.5);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    margin: 0 5px;
+    transition: background-color .5s;
+}
+
+.nav-link{
+    color: white;
+    font-size: 1rem;
+}
+
+#btnContainer{
+    float: right;
+    margin-top: 35px;
+    margin-right: 4%;
+}
+
+#about_btn:hover{
+    background-color: rgb(0, 0, 255, 0.5);
+
+}
+
+#artists_btn:hover{
+    background-color: red;
+}
+
+#find_btn:hover{
+    background-color: forestgreen;
+}
+
+/*----------------------------- About Section -----------------------------*/
+
+#about_section{
+    background-color: rgb(0, 0, 255, 0.5);
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.about-box{
+    background-color: rgba(99, 99, 99, 0.2);
+    color: white;
+    width: 30%;
+    left: 30%;
+    height: auto;
+    position: absolute;
+    text-align: center;
+    padding: 3%;
+    top: 35%;
+}
+
+/*-------------------------- Artist Grid Section ---------------------------*/
+
+#artist_section{
+    background-color: red;
+    width: 100vw;
+    height: wrap;
+    border: 1px solid black;
+}
+
+.artist-grid {   
+    --auto-grid-min-size: 22rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 3rem;
+    text-align: center;    
+    width: 80%;
+    margin: 5% auto;
+    color: white;
+}
+
+.artists{
+    margin: 10% 0;
+}
+
+.display-image{
+    height: 300px;
+    width: auto;
+}
+
+/*---------------------------- Contact Section -------------------------*/
+
+#contact_container{
+    padding: 5% 10%;
+    background-color: forestgreen;
+    width: 100vw;
+    height: wrap;
+    border: 1px solid black;
+    
+}
+
+#map_container{
+    display: inline-block;
+}
+
+#contact_details{
+    display: inline-block;
+}
+
+#suggestions{
+    display: inline-block;
+}
+
+#suggestion_box{
+    width: 90%;
+}
+
+#send_btn{
+
+}
+
+
+
